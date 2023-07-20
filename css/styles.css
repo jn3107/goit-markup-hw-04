@@ -110,6 +110,10 @@ body{
     position: relative;
 }
 
+.header-menu-link .current{
+    color: #404BBF;
+}
+
 .current::after{
     content: '';
     position: absolute;
@@ -382,11 +386,13 @@ body{
 /*!----------CUSTOMERS----------*/
 
 .customers{
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: #FFF;
 }
 
 .customers-title{
-    padding-top: 120px;
+    
     color: var(--navyblue);
     text-align: center;
     font-size: 36px;
@@ -401,7 +407,7 @@ body{
 .customers-client-list{
     display: flex;
     gap: 24px;
-    padding-bottom: 120px;
+    
 }
 
 .customers-client-item{
@@ -418,7 +424,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -590,13 +596,12 @@ body{
     overflow: hidden;
 }
 
-.projects-item:hover .projects-text{
-    transform: translateY(0%);
-}
-
+.projects-item:hover .projects-text,
 .projects-item:focus .projects-text{
     transform: translateY(0%);
 }
+
+
 
 .projects-link:hover,
 .projects-link:focus{
@@ -654,7 +659,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.40);
-    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
