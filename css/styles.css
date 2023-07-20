@@ -110,7 +110,7 @@ body{
     position: relative;
 }
 
-.header-menu-link .current{
+.header-menu-link.current{
     color: #404BBF;
 }
 
@@ -596,8 +596,8 @@ body{
     overflow: hidden;
 }
 
-.projects-item:hover .projects-text,
-.projects-item:focus .projects-text{
+.projects-link:hover .projects-text,
+.projects-link:focus .projects-text{
     transform: translateY(0%);
 }
 
